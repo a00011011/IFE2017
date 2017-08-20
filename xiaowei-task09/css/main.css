@@ -1,0 +1,302 @@
+body, html {
+    width: 100%;
+    height: 100%;
+    line-height: 1;
+    font: 12px SimHei,"Microsoft YaHei",SimSun,sans-serif;
+}
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    outline: none;
+}
+fieldset {
+    border: none;
+}
+
+fieldset legend {
+    display: none;
+}
+
+caption {
+    display: none;
+}
+ /*清除浮动*/
+.clearfix:before, .clearfix:after {
+    content: " ";
+    display: table
+}
+
+.clearfix:after {
+    clear: both
+}
+
+.fr {
+    float: right !important
+}
+
+.fl {
+    float: left !important
+}
+
+.limit-width {
+    display: block;
+    margin: 0 auto;
+    width: 1280px;
+}
+
+.icon {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+}
+.active .package-icon {
+    background: url("../img/package-active-icon.png") no-repeat;
+    background-size: auto;
+}
+.star-icon {
+    background: url("../img/star-icon.png") no-repeat;
+    background-size: auto;
+}
+.share-icon {
+    background: url("../img/share-icon.png") no-repeat;
+    background-size: auto;
+}
+.account-icon {
+    background: url("../img/account-icon.png") no-repeat;
+    background-size: auto;
+}
+.tree-arrow-down-icon {
+    background: url("../img/tree-arrow-down-icon.png") no-repeat;
+    background-size: auto;
+    background-position: 0 0;
+}
+.chosen .tree-arrow-down-icon {
+    background: url("../img/tree-arrow-down-icon.png") no-repeat;
+    background-size: auto;
+    background-position: 0px -28px;     
+}
+.tree-02-icon {
+    background: url("../img/tree-02-icon.png") no-repeat;
+    background-size: auto;
+}
+.chosen .tree-02-icon {
+    background: url("../img/tree-02-icon-active.png") no-repeat;
+    background-size: auto;
+}
+.document-icon {
+    background: url("../img/document-icon.png") no-repeat;
+    background-size: auto;
+}
+.chosened .document-icon {
+    background: url("../img/document-icon-active.png") no-repeat;
+    background-size: auto;
+}
+/* 导航 */
+.header-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    height: 56px;
+    background-color: #2189bf;
+}
+
+.logo-wrapper {
+    margin: 10px 0 0 50px;
+}
+.login-wrapper {
+    padding-left: 20px;
+    margin: 20px 92px 0 20px;
+    height: 18px;
+    background: url("../img/man-icon.png") no-repeat;
+    background-size: auto;
+    text-decoration: none;
+    line-height: 18px;
+    font-size: 12px;
+    color: #fff;
+}
+.search-wrapper {
+    border-radius: 14px;
+    margin: 14px 0 0 0;
+    padding: 0 13px 0 0;
+    height: 28px;
+    background-color: #fff;
+    font-size: 0;
+}
+.search-btn {
+    display: inline-block;
+    width: 44px;
+    height: 28px;
+}
+.search-btn .search-icon {
+    margin: 6px 0 0 20px;
+}
+
+.search-input {
+    position: relative;
+    top: -4px;
+    outline: none;
+    border: none;
+    padding: 0;
+    width: 100px;
+    height: 28px;
+    line-height: 28px;
+    font-size: 12px;
+    transition: width ease .5s;
+}
+.search-input:focus {
+    width: 260px;
+}
+
+.container-wrapper {
+    box-sizing: border-box;
+    padding-top: 56px;
+    height: 100%;
+}
+/* 侧栏 */
+.memu-wrapper {
+    width: 260px;
+    height: 100%;
+    background-color: #2a2e3d;
+}
+.memu-wrapper .account-wrapper {
+    display: block;
+    margin: 18px 0 0 46px;
+    text-decoration: none;
+    font-size: 0;
+    color: #e2e2e2;
+}
+.memu-wrapper .account-wrapper .avatar-wrapper {
+    display: inline-block;
+    border-radius: 50%;
+    border: 1px solid #b9babe;
+    padding: 4px;
+    width: 58px;
+    height: 58px;
+}
+.memu-wrapper .account-wrapper .avatar-wrapper .avatar {
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+}
+.memu-wrapper .account-wrapper .account {
+    position: relative;
+    top: -21px;
+    left: 18px;
+    font-size: 14px;
+}
+.memu-wrapper .status-wrapper {
+    padding: 20px 0 20px 46px;
+    font-size: 0;
+}
+.memu-wrapper .status-wrapper .status-inner {
+    display: inline-block;
+    width: 58px;
+    height: 38px;
+    text-decoration: none;
+    text-align: center;
+    line-height: 18px;
+    font-size: 12px;
+    color: #e2e2e2;
+}
+.memu-wrapper .status-wrapper .status-inner:first-child {
+    position: relative;
+    margin-right: 32px;
+}
+.memu-wrapper .status-wrapper .status-inner:first-child:after {
+    position: absolute;
+    right: -15px;
+    top: 6px;
+    z-index: 1;
+    content: ' ';
+    display: block;
+    border-right: 2px solid #313545;
+    width: 0;
+    height: 28px;
+}
+.memu-wrapper .status-wrapper .status-inner .info {
+    display: block;
+}
+.memu-wrapper .tree-wrapper {
+    height: 100%;
+    background-color: #2a2e3d;
+    overflow-y: auto;
+    cursor: pointer;
+}
+.memu-wrapper .tree-first-wrapper {
+    color: #67778b;
+}
+.memu-wrapper .tree-first-wrapper .tree-first-li {
+    padding: 12px 0 12px 46px;
+}
+.memu-wrapper .tree-first-wrapper .tree-first-li.active {
+    background-color: #383d4e;
+    color: #e2e2e2;
+}
+.memu-wrapper .tree-first-wrapper .tree-first-li > .icon {
+    margin-right: 10px;
+}
+.memu-wrapper .tree-first-wrapper .tree-first-li .tree-second-li {
+    padding: 12px 0 12px 22px;
+    color: #67778b;
+}
+.memu-wrapper .tree-first-wrapper .tree-first-li .tree-second-li > .icon {
+    margin-right: 6px;
+}
+.memu-wrapper .tree-first-wrapper .tree-first-li .tree-second-li.chosen {
+    color: #e2e2e2;
+}
+.memu-wrapper .tree-first-wrapper .tree-first-li .tree-second-li .tree-three-li{
+    padding: 12px 0 12px 22px;
+    color: #67778b;
+}
+.memu-wrapper .tree-first-wrapper .tree-first-li .tree-second-li .tree-three-li > .icon {
+    margin-right: 6px;
+}
+.memu-wrapper .tree-first-wrapper .tree-first-li .tree-second-li .tree-three-li.chosened {
+    color: #e2e2e2;
+}
+/* 主体 */
+.content-wrapper {
+    width: calc(100% - 260px);
+}
+.crumbs-nav {
+    height: 30px;
+    padding-left: 20px;
+    background: #fff;
+}
+.crumbs-nav li {
+    height: 12px;
+    margin: 9px 0;
+    border-right: solid 1px #aaa;
+    -webkit-transform: skewX(-20deg);
+    -ms-transform: skewX(-20deg);
+    transform: skewX(-20deg);
+}
+.crumbs-nav li:last-child {
+    border-right: none;
+}
+.crumbs-nav li a {
+    display: block;
+    padding: 0 10px;
+    color: #aaa;
+    -webkit-transform: skewX(20deg);
+    -ms-transform: skewX(20deg);
+    transform: skewX(20deg);
+}
+.crumbs-nav li:last-child a {
+    color: #6898c2;
+}
+.content {
+    padding: 20px 0 0 60px;
+    background-color: #eee;
+}

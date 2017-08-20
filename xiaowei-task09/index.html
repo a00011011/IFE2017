@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>任务九：使用HTML/CSS实现一个复杂页面</title>
+    <link href="https://cdn.bootcss.com/normalize/7.0.0/normalize.min.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+
+    <!--[if lt IE 9]>
+      <script src="https://cdn.bootcss.com/html5shiv/r29/html5.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+    <header class="header-wrapper">
+        <nav class="limit-width clearfix">
+            <a class="logo-wrapper fl" href="#"><img src="img/logo.png" alt="logo"></a>
+            <a class="login-wrapper fr" href="javascript:void(0);">登录</a>
+            <div class="search-wrapper fr">
+                <a class="search-btn" href="javascript:void(0);"><img class="search-icon" src="img/search-icon.png" alt="查询"></a>
+                <input class="search-input" type="text" name="search" value="">
+            </div>
+        </nav>
+    </header>
+    <div class="container-wrapper limit-width clearfix">
+        <aside class="memu-wrapper fl">
+            <header>
+                <a class="account-wrapper" href="javascript:void(0);">
+                    <div class="avatar-wrapper">
+                        <img class="avatar" src="img/avatar.jpg" alt="头像">
+                    </div>
+                    <span class="account">ABC123</span>
+                </a>
+                <div class="status-wrapper">
+                    <a class="status-inner" href="javascript:void(0);">
+                        <span class="info">110</span>
+                        <span class="info">收藏</span>
+                    </a>
+                    <a class="status-inner" href="javascript:void(0);">
+                        <span class="info">313</span>
+                        <span class="info">粉丝</span>
+                    </a>
+                </div>
+            </header>
+            <nav class="tree-wrapper">
+                <ul class="tree-first-wrapper">
+                    <li class="tree-first-li active"><i class="icon package-icon"></i>个人报表
+                        <ul class="tree-second-wrapper">
+                            <li class="tree-second-li"><i class="icon tree-arrow-down-icon"></i><i class="icon tree-02-icon"></i>文件一</li>
+                            <li class="tree-second-li chosen"><i class="icon tree-arrow-down-icon"></i><i class="icon tree-02-icon"></i>文件二
+                                <ul class="tree-three-wrapper">
+                                    <li class="tree-three-li"><i class="icon document-icon"></i>文档一</li>
+                                    <li class="tree-three-li chosened"><i class="icon document-icon"></i>文档二</li>
+                                </ul>
+                            </li>
+                            <li class="tree-second-li"><i class="icon tree-arrow-down-icon"></i><i class="icon tree-02-icon"></i>文件三</li>
+                        </ul>
+                    </li>
+                    <li class="tree-first-li"><i class="icon star-icon"></i>个人收藏</li>
+                    <li class="tree-first-li"><i class="icon share-icon"></i>我的分享</li>
+                    <li class="tree-first-li"><i class="icon star-icon"></i>图库</li>
+                    <li class="tree-first-li"><i class="icon star-icon"></i>成长记录</li>
+                    <li class="tree-first-li"><i class="icon account-icon"></i>账户信息</li>
+                </ul>
+            </nav>
+        </aside>
+        <div class="content-wrapper fl">
+            <nav class="crumbs-nav">
+                <ul class="clearfix">
+                    <li class="fl"><a href="#">C站</a></li>
+                    <li class="fl"><a href="#">个人报表</a></li>
+                    <li class="fl"><a href="#">文件一</a></li>
+                    <li class="fl"><a href="#">文档一</a></li>
+                </ul>
+            </nav>
+            <div class="content"></div>
+        </div>
+    </div>
+</body>
+
+</html>
